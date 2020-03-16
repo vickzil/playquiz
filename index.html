@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ############# HEAD ################### -->
+  <head>
+    <!-- ######## META TAGS AND WEBSITE DESCRIPTIONS ######## -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Test Quiz - Questions and Answers, Trivia">
+    <meta name="keywords" content="Science Quiz, ICT Quiz, Football Quiz, Knowelge development, Animal Quiz, Triviaa Science Trivia, Test Quiz, Science knowledge quiz, Chemistry quiz, Biology Quiz">
+    <meta name="author" content="Victor Nwakwue">
+    <!-- ############EXTERNAL CDN LINKS, JQUERY AND MATERIAL CSS ################## -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- ######### INTERNAL CSS LINKS ###################### -->
+    <link rel="stylesheet" href="css/home.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/dark.js"></script>
+    <!-- ############ SITE TITLE ########### -->
+    <title>Welcome to PlayQuiz</title>
+  </head>
+  <!-- ############ BODY ########### -->
+  <body onload="render()">
+    <!-- ############# HEADER BANNER ################### -->
+    <header>
+      <div class="header-content">
+        <div class="star">
+          <i class="material-icons for-rating">star</i>
+          <i class="material-icons for-rating">star</i>
+          <i class="material-icons for-rating">star</i>
+          <i class="material-icons for-rating">star</i>
+          <i class="material-icons for-white">star</i>
+        </div>
+        <h1>Play<span class="for-green">Quiz</span> </h1>
+        <a class="waves-effect waves-light btn bg-rating modal-trigger" href="#modal1"><i
+        class="material-icons right">rowing</i>Get Started</a>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon class="svg--sm" fill="#f2f2f2" points="0,0 30, 100 65,21 90,100 100,75 100,100 0,100" />
+          <polygon class="svg--lg" fill="#f2f2f2"
+            points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+          </svg>
+        </header>
+        <section class="body-content">
+          <!-- ############# FIRST BOX ################### -->
+          <div class="container">
+            <h3>PlayQuiz is perfect For</h3>
+            <div class="boxes">
+              <div class="box">
+                <h4>Bloggers</h4>
+                <p>Build your community and create giveaways "live" online</p>
+              </div>
+              <div class="box">
+                <h4>Brand</h4>
+                <p>Bring attention to your products/services and increase customer engagement through gamification</p>
+              </div>
+            </div>
+            <div class="boxes other">
+              <div class="box">
+                <h4>Sport & Events</h4>
+                <p>Engage with your friends and let them compete for prizes during breaks & for bragging rights</p>
+              </div>
+              <div class="box">
+                <h4>Corporate Training</h4>
+                <p>Make your traning more effective and interesting by adding gamification to your education</p>
+              </div>
+            </div>
+            <div class="boxes other">
+              <div class="box">
+                <h4>Public speakers</h4>
+                <p>Ensure your speaking engagements are memorable by adding the interactivity of a quiz</p>
+              </div>
+              <div class="box">
+                <h4>Entertainment</h4>
+                <p>Are your students retaining your lessons? Find out in real time!</p>
+              </div>
+            </div>
+          </div>
+          <!-- ############# CAN'T WAIT SECTION (SECOND BOX) ################### -->
+          <div class="cant-wait">
+            <div class="container">
+              <div class="foxes">
+                <h4>Can't wait to start Quiz?</h4>
+                <a class=" btn bg-rating modal-trigger" href="#modal1"><i class="material-icons right">av_timer</i>Play
+                Quiz</a>
+              </div>
+            </div>
+          </div>
+          <!-- ############# WHY PLAY QUIZ SECTION (THIRD BOX) ################### -->
+          <div class="whyquiz">
+            <div class="container">
+              <h3>Why PlayQuiz</h3>
+              <div class="boxes">
+                <div class="box">
+                  <h4>No downloading and installation</h4>
+                  <p>Launch quizzes and play online with no extra effort</p>
+                </div>
+                <div class="box">
+                  <h4>Works on any Devices</h4>
+                  <p>PlayQuiz is responsive and adjust across all devices</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ############# MODAL ################### -->
+          <div id="modal1" class="modal">
+            <div class="moda1-content">
+              <h4>Select Quiz category</h4>
+              <div class="modal-bodyo">
+                <a class=" btn bg-rating" href="football.html">Football Quiz</a>
+                <a class=" btn bg-rating" href="animal.html">Animal Quiz</a>
+                <a class=" btn bg-rating" href="science.html">Science Quiz</a>
+                <a class=" btn bg-rating" href="current-affairs.html">Current affairs</a>
+                <a class=" btn bg-rating" href="ict.html">ICT</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ############# FOOTER ################### -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col m6">
+                <h4>Contact us</h4>
+                <p>Thank You For Visiting PlayQuiz. We look forward to providing you that touch of class in your Learning.
+                  Please <a href="contact.html">Click Here</a> to contact us</p>
+                </div>
+                <div class="col m6">
+                  <h4>Made BY</h4>
+                  <p>PlayQuiz was carefully and Excellentlly designed/developed by <a href="http://victornwakwue.online">Victor
+                  Nwakwue</a>. It was developed with pure vanilla javaScript and a little bit of jQuery and Bootstrap.</p>
+                </div>
+              </div>
+              <div class="copyright">
+                <p>&copy; 2019 PlayQuiz, All rights reserved</p>
+              </div>
+            </div>
+          </footer>
+          <!-- ############# EXTERNAL JS FILES (JQUERY & MATERIALIZE CSS) ################### -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
+        </body>
+      </html>

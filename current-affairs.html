@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- ######## HEAD ################# -->
+	<head>
+		<!-- ######### META TAGS AND WEBSITE DESCRIPTIONS ################# -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Nigerian current Affairs Quiz - Questions and Answers">
+		<meta name="keywords"
+		content="Nigerian current Affairs, Current Affairs, Country Quiz, Test Quiz, General Quiz, General Knownledge">
+		<meta name="author" content="Victor Nwakwue">
+		<!-- ######### EXTERNAL CDN LINKS, JQUERY AND MATERIAL CSS ################ -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<!-- ########## INTERNAL CSS LINKS ############# -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<!-- ########### INTERNAL JAVASCRIPT LINKS ############ -->
+		<script defer src="js/dark.js"></script>
+		<script defer src="js/settings.js"></script>
+		<script defer src="js/current.js"></script>
+		<!-- ############ SITE TITLE ########### -->
+		<title>PlayQuiz | Current Affairs Quiz</title>
+	</head>
+</head>
+<body>
+	<!-- ######## QUESTION OPTION (50/50, AUDIENCE) ############ -->
+	<div class="quiz-options hide" id="quiz-options">
+		<button type="button" class="" id="fiftyfifty" onclick="fiftyFity();">
+		<i class="material-icons">help_outline</i>
+		<span class="optiontext">50/50</span>
+		<span class="fiftycanceled hide"></span>
+		</button>
+		<button type="button" class="" id="audience" onclick="audience();">
+		<i class="material-icons">group</i>
+		<span class="optiontext">Audience</span>
+		<span class="audiencecanceled hide"></span>
+		</button>
+	</div>
+	<!-- ####### LOADING PROGRESS BAR ############# -->
+	<div id="loading" class="hide">
+		<div class="progress">
+			<div class="indeterminate"></div>
+		</div>
+	</div>
+	<section>
+		<!-- ########### HAMBURGER MENU DIV ########## -->
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+		<!-- ######## LEFT SIDE MENU ############# -->
+		<div class="overlay"></div>
+		<div class="menu">
+			<div class="close">&times;</div>
+			<div class="menu-nav">
+				<!-- <h4 class="menu-title">
+				Quiz Category
+				</h4> -->
+				<div class="menu-items">
+					<a href="index.html">Home</a>
+					<a href="football.html" class="">Football Quiz</a>
+					<a href="animal.html" class="">Animal Quiz</a>
+					<a href="science.html" class="">Science Quiz</a>
+					<a href="current-affairs.html" class="gameactive">Current Affairs Quiz</a>
+					<a href="ict.html" class="">ICT Quiz</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- #### CONTAINER DIV, QUESTIONS AND BUTTONS ################ -->
+	<div class="container">
+		<div id="question-container" class="hide">
+			<h3>
+			Current Affairs Quiz <span id="questionTimer" class="right"></span>
+			</h3>
+			<div style="margin-bottom: 10px"></div>
+			<div id="question">Question
+			</div>
+			<span id="scorecard"></span>
+			<div id="answer-buttons" class="btn-grid">
+				<button class="btn1 ansbtn">Answer 1</button>
+				<button class="btn1 ansbtn">Answer 2</button>
+				<button class="btn1 ansbtn">Answer 3</button>
+				<button class="btn1 ansbtn">Answer 4</button>
+			</div>
+		</div>
+		<!-- ############### START AND NEXT CONTROL BUTTONS ################# -->
+		<div class="controls">
+			<button id="start-btn" class="start-btn d-flex-center hide">Start Quiz</button>
+			<div id="progress"></div>
+			<button id="next-btn" class="next-btn hide">Next</button>
+		</div>
+	</div>
+	<!-- ############# EXTERNAL JS FILES (JQUERY & MATERIALIZE CSS) ################### -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
+</body>
+</html>

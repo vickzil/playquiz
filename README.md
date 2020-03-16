@@ -1,0 +1,1 @@
+This is a  Quiz app build with pure vanilla JavaScript. It is built to kill Boredom and increase your knowledge capability. Please visit https://vickzil.github.io/playquiz to view this quiz app.

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/dark.js"></script>
+    <title>Contact | PlayQuiz</title>
+  </head>
+  <body>
+    <header class="support-us">
+      <div class="header-content">
+        <div class="star">
+          <i class="material-icons for-rating">star</i>
+          <i class="material-icons for-rating">star</i>
+          <i class="material-icons for-rating">star</i>
+          <i class="material-icons for-rating">star</i>
+          <i class="material-icons for-rating">star</i>
+        </div>
+        <h1>Contact<span class="for-green"> Us</span> </h1>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon class="svg--sm" fill="#f2f2f2" points="0,0 30, 100 65,21 90,100 100,75 100,100 0,100" />
+          <polygon class="svg--lg" fill="#f2f2f2"
+            points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+          </svg>
+        </header>
+        <section class="body-content">
+          <div class="container">
+            <h3>Contact Us</h3>
+            <!-- <div class="alert"></div> -->
+            <form action="" name="form" method="POST" role="form" class="shake" id="contactForm">
+              <div class="row">
+                <div class="input-field col m6 s12">
+                  <label for="fname" class="col-form-label">First Name</label>
+                  <input type="text" name="fname" class="form-control validate" value="" id="fname" required
+                  data-error="First Name is required">
+                  <!-- <?php if ($fnameerr !=''): ?>
+                  <div class="alert <?php echo $msgClass; ?>"><?php echo $fnameerr; ?></div>
+                  <?php endif; ?> -->
+                </div>
+                <div class="input-field col m6 s12">
+                  <label for="lname" class="col-form-label">Last Name</label>
+                  <input type="text" name="lname" class="form-control validate" value="" id="lname" required>
+                  <!-- <?php if ($lnameerr !=''): ?>
+                  <div class="alert <?php echo $msgClass; ?>"><?php echo $lnameerr; ?></div>
+                  <?php endif; ?> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col m6 s12">
+                  <label for="email" class="col-form-label">Your E-mail</label>
+                  <input type="email" name="email" class="form-control validate" value="" id="email" required>
+                  <!--  <?php if ($emailerr !=''): ?>
+                  <div class="alert <?php echo $msgClass; ?>"><?php echo $emailerr; ?></div>
+                  <?php endif; ?> -->
+                </div>
+                <div class="input-field col m6 s12">
+                  <label for="phone" class="col-form-label">Phone</label>
+                  <input type="tel" name="phone" value="" class="form-control validate" id="phone" required>
+                  <!-- <?php if ($phoneerr !=''): ?>
+                  <div class="alert <?php echo $msgClass; ?>"><?php echo $phoneerr; ?></div>
+                  <?php endif; ?> -->
+                </div>
+              </div>
+              <div class="input-field col s12">
+                <textarea class="materialize-textarea validate" id="message" rows="5" name="message" required> </textarea>
+                <label for="message" class="col-form-label">Anything else you will like me to know... Please feel free to say
+                your mind</label>
+                <div class="help-block with-errors error">
+                </div>
+              </div>
+              <input type="submit" id="form-submit" class="btn btn-success text-center" value="Submit" name="submit">
+              <div id="msgSubmit" class="h3 text-center hidden"></div>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+          <!-- Modal -->
+          <div id="modal1" class="modal">
+            <div class="moda1-content">
+              <h4>Select Quiz category</h4>
+              <div class="modal-bodyo">
+                <a class=" btn bg-rating" href="football.html">Football Quiz</a>
+                <a class=" btn bg-rating" href="animal.html">Animal Quiz</a>
+                <a class=" btn bg-rating" href="science.html">Science Quiz</a>
+                <a class=" btn bg-rating" href="current-affairs.html">Current affairs</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col m6">
+                <h4>Contact us</h4>
+                <p>Thank You For Visiting PlayQuiz. We look forward to providing you that touch of class in your Learning. go
+                  back <a href="index.html">Home</a></p>
+                </div>
+                <div class="col m6">
+                  <h4>Made BY</h4>
+                  <p>PlayQuiz was carefully and Excellentlly designed/developed by <a href="http://victornwakwue.online">Victor
+                  Nwakwue</a>. It was developed with pure vanilla javaScript and a little bit of jQuery and Bootstrap.</p>
+                </div>
+              </div>
+              <div class="copyright">
+                <p>&copy; 2019 PlayQuiz, All rights reserved</p>
+              </div>
+            </div>
+          </footer>
+        </body>
+      </html>
