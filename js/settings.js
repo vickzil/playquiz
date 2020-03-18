@@ -184,7 +184,7 @@ function selectAnswer(e) {
       startButton.classList.remove('hide');
       answerButtonsElement.classList.add('hide');
       progress.classList.add('hide');
-      loading.classList.add('hide');;
+      loading.classList.add('hide');
       questionContainerElement.classList.remove('hide');
       clearInterval(ticker);
       clearInterval(timeSpent);
